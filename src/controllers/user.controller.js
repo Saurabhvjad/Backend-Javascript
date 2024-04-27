@@ -94,7 +94,6 @@ const generateAccessAndRefreshTokens = async(userId)=>{
 const loginUser = asyncHandler(async(req, res) => {
     // req body -> data
     const {email, username, password} = req.body
-    console.log(req.body);
 
     // username or email
     if  (!(username || email)) {
